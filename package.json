@@ -1,11 +1,11 @@
 {
-  "name": "emberfire",
+  "name": "@vazgentigranich/parlor-emberfire",
   "description": "The officially supported Ember binding for Firebase",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "author": "Firebase (https://firebase.google.com/)",
-  "homepage": "https://github.com/firebase/emberfire/",
+  "homepage": "https://github.com/Vazgen7788/emberfire",
   "directories": {
-    "doc": "doc",
+    "doc": "docs",
     "test": "tests"
   },
   "scripts": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/firebase/emberfire.git"
+    "url": "git+https://github.com/Vazgen7788/emberfire.git"
   },
   "bugs": {
     "url": "https://github.com/firebase/emberfire/issues"
@@ -94,5 +94,6 @@
     "torii": "0.8.0",
     "vinyl-buffer": "1.0.0",
     "vinyl-source-stream": "1.1.0"
-  }
+  },
+  "main": "index.js"
 }
