@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Object.extend({
-  firebaseApp: Ember.inject.service(),
+  emberFirebaseApp: Ember.inject.service('firebase-app'),
+  firebaseApp: Ember.computed.reads('emberFirebaseApp.instance'),
 
   /**
    * Extacts session information from authentication response

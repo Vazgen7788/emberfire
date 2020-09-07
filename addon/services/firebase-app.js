@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 const { getOwner } = Ember;
 
-export const DEFAULT_NAME = '[EmberFire default app]';
+export const DEFAULT_NAME = '[DEFAULT]';
 
 export default {
   create(application) {
@@ -20,9 +20,11 @@ export default {
       app = firebase.initializeApp(config.firebase, DEFAULT_NAME);
     }
 
-    return app;
+    return {
+      instance: app
+    };
   },
 
   config: null,
-  isServiceFactory: true
+  isServiceFactory: false
 };

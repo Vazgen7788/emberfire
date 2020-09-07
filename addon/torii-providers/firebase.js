@@ -4,7 +4,8 @@ import Waitable from '../mixins/waitable';
 const { getOwner } = Ember;
 
 export default Ember.Object.extend(Waitable, {
-  firebaseApp: Ember.inject.service(),
+  emberFirebaseApp: Ember.inject.service('firebase-app'),
+  firebaseApp: Ember.computed.reads('emberFirebaseApp.instance'),
 
   open(options) {
     var providerId = options.provider;

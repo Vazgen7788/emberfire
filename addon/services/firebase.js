@@ -3,7 +3,7 @@ import Ember from 'ember';
 
 const { getOwner } = Ember;
 
-export const DEFAULT_NAME = '[EmberFire default app]';
+export const DEFAULT_NAME = '[DEFAULT]';
 
 export default {
   create(application) {
