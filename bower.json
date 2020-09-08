@@ -30,7 +30,7 @@
     "package.json"
   ],
   "dependencies": {
-    "firebase": "3.x.x"
+    "firebase": "7.x.x"
   },
   "devDependencies": {
     "ember": "2.5.1",
